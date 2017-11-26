@@ -15,6 +15,9 @@ class KING_API UKingTilesLibrary : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 	
 	UFUNCTION(BlueprintCallable, Category = "Util")
+	static FVector DirectionToCube(int32 Direction);
+
+	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector RoundCube(FVector Cube);
 
 	UFUNCTION(BlueprintCallable, Category = "Util")
@@ -31,6 +34,7 @@ class KING_API UKingTilesLibrary : public UBlueprintFunctionLibrary
 	
 	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector CubeToLocation(FVector Cube);
+
 
 	
 };

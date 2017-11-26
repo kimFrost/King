@@ -6,7 +6,38 @@
 
 
 
-
+FVector UKingTilesLibrary::DirectionToCube(int32 Direction)
+{
+	Direction = Direction % 6;
+	switch (Direction)
+	{
+	case 0:
+	{
+		return FVector{ 1,0,-1 };
+	}
+	case 1:
+	{
+		return FVector{ 1,-1,0 };
+	}
+	case 2:
+	{
+		return FVector{ 0,-1,1 };
+	}
+	case 3:
+	{
+		return FVector{ -1,0,1 };
+	}
+	case 4:
+	{
+		return FVector{ -1,1,0 };
+	}
+	case 5:
+	{
+		return FVector{ 0,1,-1 };
+	}
+	}
+	return FVector();
+}
 
 FVector UKingTilesLibrary::RoundCube(FVector Cube)
 {
@@ -65,7 +96,7 @@ FVector UKingTilesLibrary::AxialToCube(float Q, float R)
 
 FVector UKingTilesLibrary::LocationToCube(float HexWidth, float HexHeight, FVector Location)
 {
-	Location = Location - FVector{ HexWidth / 2, HexHeight / 2, 0 };
+	//Location = Location - FVector{ HexWidth / 2, HexHeight / 2, 0 };
 
 	float Q = (Location.X * FMath::Sqrt(3) / 3 - Location.Y / 3) / (HexHeight / 2);
 	float R = Location.Y * 2 / 3 / (HexHeight / 2);
