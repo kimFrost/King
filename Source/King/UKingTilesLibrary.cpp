@@ -39,6 +39,12 @@ FVector UKingTilesLibrary::DirectionToCube(int32 Direction)
 	return FVector();
 }
 
+FVector UKingTilesLibrary::DirectionToLocation(int32 Direction)
+{
+	FVector Cube = DirectionToCube(Direction);
+	return CubeToLocation(Cube);
+}
+
 FVector UKingTilesLibrary::RoundCube(FVector Cube)
 {
 	FVector RoundedCube;
