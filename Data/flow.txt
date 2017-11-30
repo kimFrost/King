@@ -1,0 +1,56 @@
+
+V = Verb
+O = Object
+R = Statistical resource;
+
+- Place[V] camp[O] (consumes internal values based on needs)
+- Place[V] other building[O] to stabalize camp[O] needs[R] (needs)
+- else camp gets abandonend
+
+
+
+
+
+Game atom
+
+1) Problem
+-
+2) Preparation
+- Input
+3a) Place
+3b) Core
+3c) Mechanic
+- loop
+4) Feedback from system
+- State update based on your input
+5) Update mental model
+- Go to problem in focus
+
+
+
+
+
+Magnitude of problems
+- Board game
+	- Decing the move (Big)
+	- Moving (small)
+- Racing 
+	- Choose path (small)
+	- Stering (Big)
+	
+	
+
+	
+	
+	
+
+	
+https://www.gdcvault.com/play/1016632/A-Theory-of-Fun-10
+	- Verb 33:30
+
+http://www.whatgamesare.com/2012/02/the-difference-between-actions-and-verbs-game-design.html
+http://www.whatgamesare.com/action.html
+http://www.whatgamesare.com/verb.html
+	
+	
+	

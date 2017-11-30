@@ -1,0 +1,85 @@
+
+http://citybuildinggames.com/review/city-sandbox/
+http://citybuildinggames.com/review/electrocity/
+http://store.steampowered.com/app/328080/Rise_to_Ruins/
+http://store.steampowered.com/app/432250/Soviet_City/
+
+
+- Lord mayor
+-
+
+
+
+- Camp
+	- Abandoned - if survial/base needs reaches zero
+	- 
+
+- Camp => Slums over time 
+	
+	
+- Rat in a box
+	
+
+	
+- +1 faith. Pulse 1 faith every 10s to all in range. Might convert all in range to religion over time
+	
+	
+	
+	
+- Residence 
+	+ Pop
+	
+	
+- Commerce
+	+ Income
+	+ Stuff
+	- Goods
+	
+	
+- Industry
+	+ Goods
+	
+	
+
+	
+	
+- Commerce
+	- Tavern
+	- Trading post
+	
+
+- Production
+	- Woodcutter
+	- Quarry
+	- Farm
+	- Mine
+	- Mason
+	
+- Civic
+	- Storehouse
+	- House
+	- Slums
+	- Cottage
+	- Treasury
+	- Townhall
+	- Well
+	- Hospital
+	- Garden
+	- Amphitheater
+	- School
+	- Plaza
+	- Statue
+	
+- Military
+	- Vault
+	- Amoery
+	- Smith
+	- Workshop
+	- Wall
+
+- Faith
+	- Monestary
+	- Church
+	- Cathedral
+	- Statue
+	
