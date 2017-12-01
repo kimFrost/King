@@ -5,7 +5,8 @@ R = Statistical resource;
 
 - Place[V] camp[O] (consumes internal values based on needs)
 - Place[V] other building[O] to stabalize camp[O] needs[R] (needs)
-- else camp gets abandonend
+- else camp[0] gets abandonend[R]
+
 
 
 
@@ -51,6 +52,49 @@ https://www.gdcvault.com/play/1016632/A-Theory-of-Fun-10
 http://www.whatgamesare.com/2012/02/the-difference-between-actions-and-verbs-game-design.html
 http://www.whatgamesare.com/action.html
 http://www.whatgamesare.com/verb.html
+	
+	
+	
+	
+	
+	
+-2 = +3
+
+
++ 1 density
+
+
+
+
+
+- Plaza
+	3x crime + 3x density => Pillory 
+		+1 security
+	
+
+	
+	
+- Industry affected by surronding residence (workers)
+	- How does the worker affect the workplace
+	
+	
+- Woodcutter
+	-1 health/wellfare to all residence in range
+	
+	
+- Provider to forest
+	- Beauty +1
+	- Nature +1
+	
+	
+	
+Tile->AddProvider(Provider)
+	- Update()
+	
+Tile->Update()
+	- Re-add stats from providers to all in range
+	- Loop providers
+	
 	
 	
 	
