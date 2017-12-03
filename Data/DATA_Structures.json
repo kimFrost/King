@@ -1,0 +1,66 @@
+[
+	{
+        "Name": "Residence",
+        "Id": "Residence",
+        "Title": "Residence",
+        "Description": "Residence",
+		"Stats": {
+			"Weath": 0,
+			"Health": 0,
+			"Stress": 0,
+			"Joy": 0,
+			"Community": 0,
+			"Fear": 0
+		},
+		"StatProviders": [
+			{
+				"Range": 1,
+				"Stats": {
+					"Community": 1,
+					"Security": 1,
+					"Production": 1,
+					"PopDensity": 1
+				}
+			}
+		]
+    },
+	{
+        "Name": "Woodcutter",
+        "Id": "Woodcutter",
+        "Title": "Woodcutter",
+        "Description": "Woodcutter",
+		"Stats": {
+			"Production": 0
+		},
+		"StatProviders": [
+			{
+				"Range": 1,
+				"Stats": {
+					"Stress": 1,
+					"Boredome": -1,
+					"Wealth": 1
+				}
+			}
+		]
+    },
+	{
+        "Name": "FirewoodCutter",
+        "Id": "FirewoodCutter",
+        "Title": "FirewoodCutter",
+        "Description": "FirewoodCutter",
+		"StatProviders": [
+			{
+				"Range": 1,
+				"IsPasive": false,
+				"Stats": {
+					"Cold": -1
+				}
+			}
+		]
+    }
+]
+
+
+
+
+	
