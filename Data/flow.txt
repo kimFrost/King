@@ -68,7 +68,7 @@ http://www.whatgamesare.com/verb.html
 
 
 - Plaza
-	3x crime + 3x density => Pillory 
+	3x order/crime + 3x density => Pillory 
 		+1 security
 	
 
@@ -97,4 +97,46 @@ Tile->Update()
 	
 	
 	
+	
+	
+- Tent (0/4 pop)
+	+1x pop / 20s
+	
+- Mutation through events
+	- Cry to the king.
+	
+	Bunkhouse
+		- Please king, lend us money!
+			- No. Turn into slums
+			- Yes. Stabilize
+	Tent
+		- We are too many in camp. Camp is full.
+			- Evict
+			- Build another camp
+			- Mutate to bunkhouse
+			- Mutate to cottage (reg wealth: 2)
+
+			
+	
+
+- Pain points.
+	- Residense has input "Noise"
+	- Factory has output "Noise"
+	- If connected then effect "Stress"
+	
+	
+	
+	
+Subdued					<----->				Intense
+Conservative  			<----->	 			Risky
+Reinforce     			<----->     		Up-ends
+Social norming			<----->				Empath for others
+Accessible				<----->				Requires literacy/learning
+Low cognitive load 		<----->				High cognitive load
+
+	
+
+The game is in your head. It is just feedback. The feedback tells you how the machine moves.
+Feedback triggers dopamine
+
 	

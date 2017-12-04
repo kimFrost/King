@@ -12,6 +12,14 @@
 			"Community": 0,
 			"Fear": 0
 		},
+		"Consumes": [
+			{
+				"ID": "Firewood",
+				"Stats": {
+					"Cold": -2
+				}
+			}
+		],
 		"StatProviders": [
 			{
 				"Range": 1,
@@ -30,8 +38,22 @@
         "Title": "Woodcutter",
         "Description": "Woodcutter",
 		"Stats": {
-			"Production": 0
+			"Production": 0,
+			"MaxProduction": 0
 		},
+		
+		MaxProduction = Num of Forests in range
+		
+		
+		"AdjacentBonus": [
+			{
+				"Range": 1,
+				"ID": "Forest",
+				"Stats": {
+					"MaxProduction": 1
+				}
+			}
+		],
 		"StatProviders": [
 			{
 				"Range": 1,
