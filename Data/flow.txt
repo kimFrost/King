@@ -100,7 +100,11 @@ Tile->Update()
 	
 	
 - Tent (0/4 pop)
-	+1x pop / 20s
+	Generators:
+		+1 pop / 20s
+	Stats:
+		-1 order
+		
 	
 - Mutation through events
 	- Cry to the king.
