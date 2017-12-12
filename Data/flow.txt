@@ -57,6 +57,15 @@ http://www.whatgamesare.com/verb.html
 	
 	
 	
+
+- 	Having people seperated into classes, and then have the classes request grouped together, 
+	allows me to give the player an option to minimize/ignore a segment of requests, effectively ignoring a class of people.
+	The player might do this, cause the requests are petty or seem unimportant in the grand design.
+	
+	
+	
+	
+	
 	
 -2 = +3
 
