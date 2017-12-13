@@ -1,4 +1,10 @@
-[
+[	
+	{
+        "Name": "Town",
+        "Id": "Town",
+        "Title": "Town",
+        "Description": "Town",
+    },
 	{
         "Name": "Residence",
         "Id": "Residence",
