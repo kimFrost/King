@@ -1,0 +1,53 @@
+
+
+- Place men in position of power (regin)
+
+- Region consist of tokens. One token for each field type. 
+- A file can have multiple yield tokens.
+
+
+- Vassal can be chosen to supply either food, might or money
+
+- The king need the army of vassal to control/dominate other vassal.
+
+
+
+- Vassal have a list of deeds, which are actions taken by a vassal, that are public knowledge.
+	- Vassal can have convert actions that are listed as executed by another vassal
+
+
+
+- Vassal
+	- Argriculture(--)
+	- Military(++)
+	- Faith(+++)
+	- Order(+++)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+- Emergent stories
+	- The trigger/catch 
+		- Something out of the ordinary that 
+	- Context
+	- The detechtive case
+		- Multiple elements
+	
+	
+	
+	
+- Slime rancher
+	- Look at slime pen
+	- Noticed that some slimes are escaping or trying to.
+	- Investigate shows that slimes are standing atop another to get taller.
+	- The slimes jumps out the pen to escape.
+	
+- Slimes 
+	
+	
+	

@@ -1,0 +1,97 @@
+
+
+
+
+
+- Road
+	- Routes TMap<BP_Structure*, FST_Route>
+		- StepDistance
+
+
+- Add route/exit to each adjacent tile with road
+	- Route leads to desitnation with step distance 0
+
+	
+- Loop added routes and trigger update
+	- Add route to their adjacent tiles with road
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+- Road spline construction
+	- Adjacent check
+	
+- Convoy travel along road spline.
+
+
+
+
+- Town generate convoy
+- BP_Town
+	- Owner/Lord/
+- BP_Conboy
+	- Travel from to over time
+	- At arival add to resource pool
+	- At arrival construct structure
+	
+	
+	
+- King
+	- Vassals/Lords/Advisor/Minister
+		- Vassals
+			- Towns/Settlements
+		- Towns/Settlements
+		
+		
+- Rumors/information
+	- Spread idea along roads with travelers.
+	- Information and rumor spread with convoys. Knowledge of deeds needs to spread along path by convoys and travelers to spread to other towns.
+		- Collect/spread information in all towns that is traveled through. 
+		- Collect/spread information from castle on delivery
+	- Search tolls. Confiscate banned items. Illigal papers to spread rumor and information. 
+		
+		
+		
+		
+		
+
+- A king can sacrifice his soul for great leadership. To steer his people through hard times.
+	- Overtaking a person strips them of all stats and traits.
+	
+	- WIll the spirit step down when not needed, or will it cling on.
+	
+	
+	
+- Starting conditions
+	- Number of towns
+	- Number of lords
+	- Number of advisors
+	- Number of resources
+	- Number of threats
+	- Unique threats
+	- The old king has a huge debt.
+	- People traits (effects of previous king)
+		- Prone to sickness
+		- Hard workers
+		
+		
+		
+- Campaign
+	- Story told over time
+		- Like xcom 2
+		- Crises over time
+		
+		
+
+		
+https://www.google.dk/search?biw=1920&bih=1069&tbm=isch&sa=1&ei=VJcVWo_dCYOtadbcnrAC&q=civ+6+adjacency+bonus&oq=civ+6+ad&gs_l=psy-ab.3.0.0i19k1l3j0i30i19k1l6j0i8i30i19k1.108514.111234.0.112112.10.9.1.0.0.0.91.551.9.9.0....0...1c.1.64.psy-ab..0.9.462...0j0i67k1j0i30k1.0.SRy9SqFSubY#imgrc=Onrj04j8rJf8wM:
+https://www.gamasutra.com/blogs/HermanTulleken/20140912/225495/20_Fun_Grid_Facts_Hex_Grids.php
+https://www.gdcvault.com/play/1016632/A-Theory-of-Fun-10
+http://www.whatgamesare.com/2011/09/fun-simple-to-explain-hard-to-accept.html
+https://www.gamasutra.com/blogs/PaulGadi/20171127/310347/Lets_Build_A_Decentralized_Game_Economy_Using_Blockchains_Part_1.php
