@@ -44,11 +44,13 @@ public:
 		FString Id = "",
 		FString Title = "",
 		TMap<FString, int32> Stats = TMap<FString, int32>(),
-		TArray<FST_StatProvider> StatProviders = TArray<FST_StatProvider>())
+		TArray<FST_StatProvider> StatProviders = TArray<FST_StatProvider>(),
+		bool bIncludePathing = false)
 		: Id(Id)
 		, Title(Title)
 		, Stats(Stats)
 		, StatProviders(StatProviders)
+		, bIncludePathing(bIncludePathing)
 	{}
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
@@ -62,6 +64,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
 	TArray<FST_StatProvider> StatProviders;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	bool bIncludePathing;
 };
 
 
