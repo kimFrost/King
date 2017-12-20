@@ -17,8 +17,17 @@ class KING_API UKingTilesLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector DirectionToCube(int32 Direction);
 
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Util")
+	static int32 CubeToDirection(FVector Cube);
+
 	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector DirectionToLocation(int32 Direction);
+
+	//UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Util")
+	//static int32 LocationToDirection(FVector Location);
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Util")
+	static FRotator DirectionToRotation(int32 Direction);
 
 	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector RoundCube(FVector Cube);

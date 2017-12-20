@@ -3,12 +3,23 @@
 #include "UKingTilesLibrary.h"
 
 
+const TArray<FVector> Directions = {
+	FVector(1, 0, -1), 
+	FVector(1, -1, 0), 
+	FVector(0, -1, 1),
+	FVector(-1, 0, 1), 
+	FVector(-1, 1, 0), 
+	FVector(0, 1, -1)
+};
 
-
+//https://www.redblobgames.com/grids/hexagons/implementation.html#hex-arithmetic
 
 FVector UKingTilesLibrary::DirectionToCube(int32 Direction)
 {
 	Direction = Direction % 6;
+
+	return Directions[Direction];
+
 	switch (Direction)
 	{
 	case 0:
@@ -39,10 +50,23 @@ FVector UKingTilesLibrary::DirectionToCube(int32 Direction)
 	return FVector();
 }
 
+int32 UKingTilesLibrary::CubeToDirection(FVector Cube)
+{
+	Cube.Normalize();
+	FVector RoundedCube = RoundCube(Cube);
+	return Directions.Find(Cube);
+}
+
 FVector UKingTilesLibrary::DirectionToLocation(int32 Direction)
 {
 	FVector Cube = DirectionToCube(Direction);
 	return CubeToLocation(Cube);
+}
+
+FRotator UKingTilesLibrary::DirectionToRotation(int32 Direction)
+{
+	FVector Location = DirectionToLocation(Direction);
+	return Location.Rotation();
 }
 
 FVector UKingTilesLibrary::RoundCube(FVector Cube)
