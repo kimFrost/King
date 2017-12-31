@@ -8,7 +8,20 @@
 #include "UCustomTypesLibrary.generated.h"
 
 
-
+USTRUCT(BlueprintType)
+struct FST_HexLayout : public FTableRowBase
+{
+	GENERATED_USTRUCT_BODY()
+public:
+	FST_HexLayout()
+	{}
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	FString Id;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	TArray<FTransform> PrimaryTransforms;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	TArray<FTransform> SecondaryTransforms;
+}
 
 USTRUCT(BlueprintType)
 struct FST_StatProvider : public FTableRowBase
