@@ -8,20 +8,46 @@
 #include "UCustomTypesLibrary.generated.h"
 
 
+
+USTRUCT(BlueprintType)
+struct FST_StringInt
+{
+	GENERATED_USTRUCT_BODY()
+public:
+	FST_StringInt(
+		FString Key = "",
+		int32 Value = 0)
+		: Key(Key)
+		, Value(Value)
+	{}
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Custom")
+	FString Key;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Custom")
+	int32 Value;
+};
+
+
 USTRUCT(BlueprintType)
 struct FST_HexLayout : public FTableRowBase
 {
 	GENERATED_USTRUCT_BODY()
 public:
-	FST_HexLayout()
+	FST_HexLayout(
+		FString Id = "",
+		TArray<FTransform> PrimaryTransforms = TArray<FTransform>(),
+		TArray<FTransform> SecondaryTransforms = TArray<FTransform>())
+		: Id(Id)
+		, PrimaryTransforms(PrimaryTransforms)
+		, SecondaryTransforms(SecondaryTransforms)
 	{}
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Layout")
 	FString Id;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Layout")
 	TArray<FTransform> PrimaryTransforms;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Structure")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Layout")
 	TArray<FTransform> SecondaryTransforms;
-}
+};
+
 
 USTRUCT(BlueprintType)
 struct FST_StatProvider : public FTableRowBase
@@ -30,10 +56,14 @@ struct FST_StatProvider : public FTableRowBase
 public:
 	FST_StatProvider(
 		int32 Range = 1,
-		bool IsPasive = true,
+		bool IsPassive = true,
+		bool AddToSource = true,
+		FString SourceID = "",
 		TMap<FString, int32> Stats = TMap<FString, int32>())
 		: Range(Range)
 		, IsPasive(IsPasive)
+		, AddToSource(AddToSource)
+		, SourceID(SourceID)
 		, Stats(Stats)
 	{}
 
@@ -42,6 +72,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Provider")
 	bool IsPasive;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Provider")
+	bool AddToSource;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Provider")
+	FString SourceID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Provider")
 	TMap<FString, int32> Stats;
