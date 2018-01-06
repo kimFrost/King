@@ -152,3 +152,33 @@ FVector UKingTilesLibrary::CubeToLocation(FVector Cube)
 
 	return FVector(X, Y, 0);
 }
+
+TArray<FVector> UKingTilesLibrary::GetCubeRing(FVector CubeCenter, int32 Distance)
+{
+	TArray<FVector> Cubes = TArray<FVector>();
+
+	FVector Cube = CubeCenter + (DirectionToCube(0) * Distance); // Start which is not center, but position zero
+	for (int32 i = 0; i < 6; i++)
+	{
+		for (int32 r = 0; r < Distance; r++)
+		{
+			Cubes.Add(Cube);
+			Cube = Cube + DirectionToCube(i + 2); // +2 to make rotation match.
+		}
+	}
+	return Cubes;
+}
+
+TArray<FVector> UKingTilesLibrary::GetCubeSpiralInRange(FVector CubeFrom, int32 Range, bool IncludeFrom)
+{
+	TArray<FVector> Cubes = TArray<FVector>();
+	for (int32 k = 1; k <= Range; k++)
+	{
+		Cubes.Append(GetCubeRing(CubeFrom, k));
+	}
+	if (IncludeFrom)
+	{
+		Cubes.Add(CubeFrom);
+	}
+	return Cubes;
+}

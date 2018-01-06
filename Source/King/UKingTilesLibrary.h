@@ -47,6 +47,11 @@ class KING_API UKingTilesLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "Util")
 	static FVector CubeToLocation(FVector Cube);
 
+	UFUNCTION(BlueprintCallable, Category = "Util")
+	static TArray<FVector> GetCubeRing(FVector CubeCenter, int32 Distance);
+
+	UFUNCTION(BlueprintCallable, Category = "Util")
+	static TArray<FVector> GetCubeSpiralInRange(FVector CubeFrom, int32 Range, bool IncludeFrom);
 
 	
 };
