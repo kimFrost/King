@@ -7,6 +7,9 @@
 #include "UNeedsComponent.generated.h"
 
 
+class UStat;
+
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class KING_API UNeedsComponent : public UActorComponent
 {
@@ -15,6 +18,13 @@ class KING_API UNeedsComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UNeedsComponent();
+
+	TMap<FString, int32> Needs;
+
+	// Food/Hunger
+	
+	TArray<UStat*> Stats;
+
 
 protected:
 	// Called when the game starts

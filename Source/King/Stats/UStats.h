@@ -13,8 +13,6 @@ UCLASS(Blueprintable, BlueprintType)
 class KING_API UStats : public UObject
 {
 	GENERATED_BODY()
-	
-	
-	
+
 	
 };
